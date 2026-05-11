@@ -124,5 +124,4 @@ namespace CppCLRWinFormsProject {
 	};
 }
 
-//This is a test from sanjibanjit 
-// This is a test from UZI
+
