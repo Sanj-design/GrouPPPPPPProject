@@ -1,13 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\",
+  "WorkspaceRootPath": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:Form1_Ore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Sanjeet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:Form1_Sanjeet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\WaveSuperPositionFunctions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:WaveSuperPositionFunctions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Aayan.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:Form1_Aayan.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\DoubleSlitPropagation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:DoubleSlitPropagation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{7CB81CFA-A8A1-4F22-8D29-A13F269D67B1}|GroupSubmission.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
@@ -18,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 19,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1_Ore.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
+              "RelativeDocumentMoniker": "Form1_Ore.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
+              "RelativeToolTip": "Form1_Ore.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T18:40:46.799Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -70,31 +103,88 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WaveSuperPositionFunctions.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\WaveSuperPositionFunctions.h",
+              "RelativeDocumentMoniker": "WaveSuperPositionFunctions.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\WaveSuperPositionFunctions.h",
+              "RelativeToolTip": "WaveSuperPositionFunctions.h",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T18:31:50.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1_Aayan.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Aayan.h",
+              "RelativeDocumentMoniker": "Form1_Aayan.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Aayan.h",
+              "RelativeToolTip": "Form1_Aayan.h",
+              "ViewState": "AgIAANUAAAAAAAAAAAAAAOcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T18:30:20.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoubleSlitPropagation.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\DoubleSlitPropagation.h",
+              "RelativeDocumentMoniker": "DoubleSlitPropagation.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\DoubleSlitPropagation.h",
+              "RelativeToolTip": "DoubleSlitPropagation.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T18:28:08.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1_Sanjeet.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Sanjeet.h",
+              "RelativeDocumentMoniker": "Form1_Sanjeet.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Sanjeet.h",
+              "RelativeToolTip": "Form1_Sanjeet.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T15:24:50.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.h",
-              "DocumentMoniker": "C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
               "RelativeToolTip": "Form1.h",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-11T14:17:03.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Ezrah\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
               "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h [Design]",
+              "RelativeToolTip": "Form1.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T14:17:02.433Z"
+              "WhenOpened": "2026-05-11T14:17:02.433Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

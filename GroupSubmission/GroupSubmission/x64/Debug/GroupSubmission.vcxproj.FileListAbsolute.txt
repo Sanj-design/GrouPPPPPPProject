@@ -1,0 +1,3 @@
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.AssemblyReference.cache
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.Form1.resources
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.GenerateResource.cache
