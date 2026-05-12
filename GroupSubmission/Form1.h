@@ -118,7 +118,7 @@ namespace CppCLRWinFormsProject {
 		f->Show();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		Form1_Ore^ f = gcnew Form1_Ore();
+		SlitWidthProject::Form1_Ore^ f = gcnew SlitWidthProject::Form1_Ore();
 		f->Show();
 	}
 	};

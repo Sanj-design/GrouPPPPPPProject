@@ -41,19 +41,6 @@
           "SelectedChildIndex": 19,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1_Ore.h",
-              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
-              "RelativeDocumentMoniker": "Form1_Ore.h",
-              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
-              "RelativeToolTip": "Form1_Ore.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T18:40:46.799Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -111,6 +98,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1_Ore.h",
+              "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
+              "RelativeDocumentMoniker": "Form1_Ore.h",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1_Ore.h",
+              "RelativeToolTip": "Form1_Ore.h",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T18:40:46.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "WaveSuperPositionFunctions.h",
               "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\WaveSuperPositionFunctions.h",
@@ -119,8 +119,7 @@
               "RelativeToolTip": "WaveSuperPositionFunctions.h",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAEoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T18:31:50.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T18:31:50.326Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Form1_Aayan.h",
               "ViewState": "AgIAANUAAAAAAAAAAAAAAOcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T18:30:20.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T18:30:20.006Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "DoubleSlitPropagation.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T18:28:08.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T18:28:08.136Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "Form1_Sanjeet.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T15:24:50.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T15:24:50.498Z"
             },
             {
               "$type": "Document",
@@ -167,9 +163,9 @@
               "Title": "Form1.h",
               "DocumentMoniker": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h",
-              "RelativeToolTip": "Form1.h",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHgAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h*",
+              "RelativeToolTip": "Form1.h*",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-11T14:17:03.86Z",
               "EditorCaption": ""
@@ -183,8 +179,7 @@
               "ToolTip": "C:\\Users\\sanje\\source\\repos\\GrouPPPPPPProject\\GroupSubmission\\Form1.h [Design]",
               "RelativeToolTip": "Form1.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-11T14:17:02.433Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-11T14:17:02.433Z"
             }
           ]
         }
