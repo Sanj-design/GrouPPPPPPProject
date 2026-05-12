@@ -4,3 +4,6 @@ C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x6
 C:\Users\boopb\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.AssemblyReference.cache
 C:\Users\boopb\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.Form1.resources
 C:\Users\boopb\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.GenerateResource.cache
+C:\Users\Aayan\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.AssemblyReference.cache
+C:\Users\Aayan\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.Form1.resources
+C:\Users\Aayan\source\repos\GrouPPPPPPProject\GroupSubmission\GroupSubmission\x64\Debug\GroupSubmission.vcxproj.GenerateResource.cache

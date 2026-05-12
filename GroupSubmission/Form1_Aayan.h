@@ -100,7 +100,7 @@ namespace CppCLRWinFormsProject {
 
 			// Button
 			button1->Text = L"Start / Stop";
-			button1->Location = Point(1000, 500);
+			button1->Location = Point(1100, 475);
 			button1->Click += gcnew EventHandler(this, &Form1_Aayan::toggle);
 
 			// Checkboxes
