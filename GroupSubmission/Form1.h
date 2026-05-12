@@ -57,6 +57,8 @@ namespace CppCLRWinFormsProject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->BackgroundImage = Image::FromFile("Background.png");
+            this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());

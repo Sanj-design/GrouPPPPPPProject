@@ -2,13 +2,13 @@
 C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\DoubleSlitPropagation.h(28,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   (compiling source file '/CppCLR_WinFormsProject.cpp')
   
-C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(304,100): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(286,100): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   (compiling source file '/CppCLR_WinFormsProject.cpp')
   
-C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(304,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(286,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   (compiling source file '/CppCLR_WinFormsProject.cpp')
   
-C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(312,42): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\sanje\source\repos\GrouPPPPPPProject\GroupSubmission\Form1_Sanjeet.h(294,42): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   (compiling source file '/CppCLR_WinFormsProject.cpp')
   
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link

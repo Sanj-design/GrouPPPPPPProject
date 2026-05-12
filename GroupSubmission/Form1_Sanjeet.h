@@ -247,24 +247,6 @@ namespace CppCLRWinFormsProject {
 			   this->label5->TabIndex = 12;
 			   this->label5->Text = L"Num of Silts";
 			   // 
-			   // button2
-			   // 
-			   this->button2->Location = System::Drawing::Point(986, 594);
-			   this->button2->Name = L"button2";
-			   this->button2->Size = System::Drawing::Size(122, 50);
-			   this->button2->TabIndex = 13;
-			   this->button2->Text = L"button2";
-			   this->button2->UseVisualStyleBackColor = true;
-			   // 
-			   // button3
-			   // 
-			   this->button3->Location = System::Drawing::Point(986, 650);
-			   this->button3->Name = L"button3";
-			   this->button3->Size = System::Drawing::Size(122, 43);
-			   this->button3->TabIndex = 14;
-			   this->button3->Text = L"button3";
-			   this->button3->UseVisualStyleBackColor = true;
-			   // 
 			   // Form1_Sanjeet
 			   // 
 			   this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -382,9 +364,6 @@ namespace CppCLRWinFormsProject {
 	}
 	private: System::Void numericUpDown5_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
 		this->pictureBox1->Invalidate();
-	}
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-
 	}
 
 	};
