@@ -64,32 +64,35 @@ namespace CppCLRWinFormsProject {
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::Color::Green;
 			this->button1->Location = System::Drawing::Point(60, 81);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(213, 168);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Text = L"Double Slit";
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// button2
-			// 
+		
+			this->button2->BackColor = System::Drawing::Color::Red;
 			this->button2->Location = System::Drawing::Point(380, 80);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(200, 169);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Text = L"Frequency";
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
 			// button3
 			// 
+			this->button3->BackColor = System::Drawing::Color::Blue;
 			this->button3->Location = System::Drawing::Point(703, 81);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(192, 168);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"button3";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Text = L"Slit Width";
+			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
 			// Form1
@@ -118,7 +121,7 @@ namespace CppCLRWinFormsProject {
 		f->Show();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		SlitWidthProject::Form1_Ore^ f = gcnew SlitWidthProject::Form1_Ore();
+		Form1_Ore^ f = gcnew Form1_Ore();
 		f->Show();
 	}
 	};

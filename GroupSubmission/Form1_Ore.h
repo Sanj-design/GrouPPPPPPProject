@@ -1,7 +1,7 @@
 #pragma once
 
+namespace CppCLRWinFormsProject {
 
-namespace SlitWidthProject {
 
 	using namespace System;
 	using namespace System::Windows::Forms;

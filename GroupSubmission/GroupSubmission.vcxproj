@@ -136,7 +136,13 @@
     </ClInclude>
     <ClInclude Include="Form1_Aayan.h" />
     <ClInclude Include="Form1_Ore.h" />
+    <ClInclude Include="Form1_Ore1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1_Sanjeet.h" />
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="WaveSuperPositionFunctions.h" />
@@ -145,6 +151,8 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="Form1_Ore1.cpp" />
+    <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
