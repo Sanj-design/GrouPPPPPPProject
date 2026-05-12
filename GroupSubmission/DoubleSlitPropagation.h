@@ -115,10 +115,10 @@ void drawWavefront(Graphics^ g, double wavelength1, double phase1, double amplit
 	int height = (int)g->ClipBounds.Height;
 
 	double centerY = height / 2.0;
-	double xScale = width / 8.0;
+	//double xScale = width / 8.0;
 	double yScale = height / 2.0;
 
-	double pixelsPerWave1 = wavelength1 * xScale / 10.0;
+	double pixelsPerWave1 = wavelength1;
 
 
 	Pen^ bluePen = gcnew Pen(Color::Blue, 1);
@@ -143,9 +143,9 @@ void drawSlitsWaveFronts(Graphics^ g, double wavelength1, double phase1, double 
 
 	double centerY = height / 2.0;
 	double yScale = height / 2.0;
-	double xScale = width / 8.0;
+	//double xScale = width / 8.0;
 
-	double pixelsPerWave = wavelength1 * xScale / 10.0;
+	double pixelsPerWave = wavelength1;
 	double barrierX = width / 4.0;
 	double slitHalfWidth = (slitWidth / 2.0);
 
@@ -202,14 +202,14 @@ Bitmap^ buildInterferenceScreen(Graphics^ g, double wavelength1, double phase1, 
 
 	double centerY = height / 2.0;
 	double yScale = height / 2.0;
-	double xScale = width / 8.0;
+	/*double xScale = width / 8.0;*/
 
-	double pixelsPerWave = wavelength1 * xScale / 10.0;
+	double pixelsPerWave = wavelength1;
 	double constantK = 2.0 * Math::PI / pixelsPerWave;
 	double barrierX = width * 0.25;
 	double screenX = width * 0.95;
 	double length = screenX - barrierX;
-	double slitHalfWidth = (slitWidth / 2.0);
+	double slitHalfWidth = (slitWidth / 2.0) * yScale;
 
 	array<double>^ slitY = gcnew array<double>(numSlits);
 	if (numSlits == 1) {
@@ -228,10 +228,7 @@ Bitmap^ buildInterferenceScreen(Graphics^ g, double wavelength1, double phase1, 
 	delete displayScreenPen;
 
 	int stripWidthOfScreen = 25;
-	int leftScreen = (int)screenX - stripWidthOfScreen / 2;
-	/*if (leftScreen < 0) {
-		leftScreen = 0;
-	}*/
+	
 	Bitmap^ bitmap = gcnew Bitmap(stripWidthOfScreen, height, Imaging::PixelFormat::Format32bppArgb);
 	Imaging::BitmapData^ bitmapData = bitmap->LockBits(
 		System::Drawing::Rectangle(0, 0, stripWidthOfScreen, height),
@@ -241,6 +238,8 @@ Bitmap^ buildInterferenceScreen(Graphics^ g, double wavelength1, double phase1, 
 	int stride = bitmapData->Stride;
 	unsigned char* scan0 = (unsigned char*)(void*)bitmapData->Scan0;
 
+	double maxIntensity = 0.0;
+	array<double>^ intensities = gcnew array<double>(height);
 	for (int h = 0; h < height; h++) {
 		double realPart = 0.0, imaginaryPart = 0.0;
 		for (int i = 0; i < numSlits; i++) {
@@ -248,30 +247,39 @@ Bitmap^ buildInterferenceScreen(Graphics^ g, double wavelength1, double phase1, 
 			double radius = Math::Sqrt(length * length + dh * dh);
 
 			double arguement = (slitHalfWidth > 0) ? constantK * slitHalfWidth * dh / radius : 0.0;
-			double sinc = (Math::Abs(arguement) > 1e-19) ? Math::Sin(arguement) / arguement : 1.0;
+			double sinc = (Math::Abs(arguement) > 1e-10) ? Math::Sin(arguement) / arguement : 1.0;
+			//A wave travelling distance r from a point source is written as :
+			//psi = A * e ^ (ikr) = A * cos(kr) + i * A * sin(kr)
+		    // where k = 2 * pi / lambda is the wavenumber.
+		    //realPart += sinc * cos(k * r + phase)
+			// imaginaryPart += sinc * sin(k * r + phase)
 
-			realPart += sinc * Math::Cos(constantK * radius);
-			imaginaryPart += sinc * Math::Sin(constantK * radius);
+			realPart += sinc * Math::Cos(constantK * radius + phase1);
+			imaginaryPart += sinc * Math::Sin(constantK * radius + phase1);
 		}
-		double intensity = (realPart * realPart + imaginaryPart * imaginaryPart);
-		intensity = Math::Max(0.0, Math::Min(1.0, intensity / (double)(numSlits * numSlits)));
-		std::cout << intensity;
-		unsigned char brightness = (unsigned char)(intensity * 255);
 
+		//Intensity is the squared magnitude of the total wave :
+		//I = | psi_total | ^ 2 = realPart ^ 2 + imaginaryPart ^ 2
+		//For two slits this expands to :
+		//I = 2 + 2 * cos(k * delta_r)    where delta_r = r1 - r2(path difference)
+		intensities[h] = realPart * realPart + imaginaryPart * imaginaryPart;
+		if (intensities[h] > maxIntensity) {
+			maxIntensity = intensities[h];
+		}
+	}
+		
+	for (int h = 0; h < height; h++) {
+		double normalizedIntensity = (maxIntensity > 0) ? intensities[h] / maxIntensity : 0.0;	
+		unsigned char brightness = (unsigned char)(normalizedIntensity * 255.0);	
 		unsigned char* pixelData = scan0 + h * stride;
-		for (int bx = 0; bx < stripWidthOfScreen; bx++) {
-			pixelData[bx * 4 + 0] = brightness; // Blue
-			pixelData[bx * 4 + 1] = brightness; // Green
-			pixelData[bx * 4 + 2] = brightness; // Red
-			pixelData[bx * 4 + 3] = 255;        // Alpha
+		for (int w = 0; w < stripWidthOfScreen; w++) {
+			pixelData[w * 4] = brightness;		
+			pixelData[w * 4 + 1] = brightness;	
+			pixelData[w * 4 + 2] = brightness;	
+			pixelData[w * 4 + 3] = 255;		
 		}
-		/*Color colour = Color::FromArgb(brightness, brightness, brightness);
-		for (int bit = 0; bit < stripWidthOfScreen; bit++) {
-			bitmap->SetPixel(bit, h, colour);
-		}*/
 	}
 	bitmap->UnlockBits(bitmapData);
-	//g->DrawImage(bitmap, leftScreen, 0);
 	return bitmap;
 }
 

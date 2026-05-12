@@ -143,7 +143,8 @@ namespace CppCLRWinFormsProject {
 			   // numericUpDown1
 			   // 
 			   this->numericUpDown1->Location = System::Drawing::Point(12, 594);
-			   this->numericUpDown1->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
+			   this->numericUpDown1->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 0 });
+			   this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 100, 0, 0, 0 });
 			   this->numericUpDown1->Name = L"numericUpDown1";
 			   this->numericUpDown1->Size = System::Drawing::Size(120, 26);
 			   this->numericUpDown1->TabIndex = 3;
@@ -323,17 +324,24 @@ namespace CppCLRWinFormsProject {
 		}
 
 		int barrierX = (int)(e->Graphics->ClipBounds.Width * 0.25);
-		e->Graphics->SetClip(System::Drawing::Rectangle(0, 0, barrierX, (int)e->Graphics->ClipBounds.Height));
+		int screenX = (int)(e->Graphics->ClipBounds.Width * 0.95);
 
+		e->Graphics->SetClip(System::Drawing::Rectangle(0, 0, barrierX, pictureBoxHeight));
 		drawWavefront(e->Graphics, wavelength1, phase1, amplitude1, direction);
 		e->Graphics->ResetClip();
-		drawSlitsWaveFronts(e->Graphics, wavelength1, phase1, amplitude1, slitSeparation, slitWidth, numSlits, pictureBoxWidth, pictureBoxHeight);
-		//drawInterferenceScreen(e->Graphics, wavelength1, phase1, slitSeparation, slitWidth, numSlits);
 
-		int width = (int)e->Graphics->ClipBounds.Width;
+		e->Graphics->SetClip(System::Drawing::Rectangle(barrierX, 0, screenX - barrierX, pictureBoxHeight));
+		drawSlitsWaveFronts(e->Graphics, wavelength1, phase1, amplitude1,
+			slitSeparation, slitWidth, numSlits, pictureBoxWidth, pictureBoxHeight);
+		e->Graphics->ResetClip();
+
 		int stripWidthOfScreen = 25;
-		int leftScreen = Math::Max(0, (int)(width * 0.95) - stripWidthOfScreen / 2);
+		int leftScreen = screenX - stripWidthOfScreen / 2;
 		e->Graphics->DrawImage(cachedScreen, leftScreen, 0);
+
+		Pen^ screenPen = gcnew Pen(Color::Gray, 2.0f);
+		e->Graphics->DrawLine(screenPen, screenX, 0, screenX, pictureBoxHeight);
+		delete screenPen;
 
 	}
 	private: System::Void numericUpDown1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
